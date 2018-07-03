@@ -4,3 +4,6 @@
 [submodule "third_party/catch2"]
 	path = third_party/catch2
 	url = https://github.com/catchorg/Catch2.git
+[submodule "third_party/asap_boost"]
+	path = third_party/asap_boost
+	url = https://gitlab.com/absassi/asap_boost.git
