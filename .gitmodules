@@ -7,3 +7,6 @@
 [submodule "third_party/asap_boost"]
 	path = third_party/asap_boost
 	url = https://gitlab.com/absassi/asap_boost.git
+[submodule "common"]
+	path = common
+	url = https://gitlab.com/absassi/asap_common.git
