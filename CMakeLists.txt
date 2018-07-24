@@ -88,7 +88,7 @@ option(OPTION_GOOGLE_TSAN    "Instrument code with thread sanitizer"            
 # optimization. For some projects you may want to set a default build type so
 # that you do not have to remember to set it.
 if(NOT CMAKE_BUILD_TYPE AND NOT CMAKE_CONFIGURATION_TYPES)
-  message("STATUS Setting build type to 'RelWithDebInfo' as none was specified.")
+  message(STATUS "Setting build type to 'RelWithDebInfo' as none was specified.")
   set(CMAKE_BUILD_TYPE RelWithDebInfo CACHE STRING "Choose the type of build." FORCE)
   # Set the possible values of build type for cmake-gui
   set_property(CACHE CMAKE_BUILD_TYPE PROPERTY STRINGS "Debug" "Release"
