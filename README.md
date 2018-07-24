@@ -1,13 +1,9 @@
-[![Build Status](https://travis-ci.org/abdes/asap.svg?branch=master)](https://travis-ci.org/abdes/asap)
+[![Build status](https://ci.appveyor.com/api/projects/status/nng5iin0wbccjhkx?svg=true)](https://ci.appveyor.com/project/abdes/asap-app-console)
+[![pipeline status](https://gitlab.com/absassi/asap_app_console/badges/master/pipeline.svg)](https://gitlab.com/absassi/asap_app_console/commits/master)
 
-# Starter project with console/imgui runners
+# Starter project with console runner
 
 TODO: Documentation
-
-## Getting the code
-```
-git clone --recurse-submodules https://github.com/abdes/asap.git
-```
 
 ## Building
 ```
