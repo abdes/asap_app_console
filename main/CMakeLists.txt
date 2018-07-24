@@ -74,9 +74,6 @@ set(compile_options)
 set(libraries
   asap::common
   spdlog
-  Boost::boost
-  Boost::program_options
-  Boost::system
   )
 
 

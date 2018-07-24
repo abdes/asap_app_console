@@ -5,13 +5,9 @@
 
 #include <iostream>
 
-#include <boost/program_options.hpp>
-
 #include <common/logging.h>
 #include <console_runner.h>
 #include <detached_application.h>
-
-namespace bpo = boost::program_options;
 
 
 using asap::ConsoleRunner;
@@ -25,22 +21,9 @@ int main(int argc, char **argv) {
 
 
   try {
-    // Command line arguments
-    bpo::options_description desc("Allowed options");
-    // clang-format off
-    desc.add_options()
-        ("help", "show the help message");
-    // clang-format on
-
-    bpo::variables_map bpo_vm;
-    bpo::store(bpo::parse_command_line(argc, argv, desc), bpo_vm);
-
-    if (bpo_vm.count("help")) {
-      std::cout << desc << std::endl;
-      return 0;
-    }
-
-    bpo::notify(bpo_vm);
+    //
+    // Handle program options
+    //
 
     ASLOG_TO_LOGGER(logger, info, "starting in console mode...");
     //

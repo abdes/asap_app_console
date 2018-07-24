@@ -3,9 +3,6 @@
 #    (See accompanying file LICENSE or copy at
 #   https://opensource.org/licenses/BSD-3-Clause)
 
-# Boost
-add_subdirectory(asap_boost)
-
 # Catch2
 # EXCLUDE_FROM_ALL to not have it install its files during install
 add_subdirectory(catch2 EXCLUDE_FROM_ALL)
