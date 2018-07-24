@@ -7,13 +7,6 @@
 
 #include <runner_base.h>
 
-namespace boost {
-namespace asio {
-class io_context;
-class signal_set;
-}  // namespace asio
-}  // namespace boost
-
 namespace asap {
 
 class ConsoleRunner : public RunnerBase {
@@ -27,9 +20,6 @@ class ConsoleRunner : public RunnerBase {
   void Run() override;
 
  private:
-  boost::asio::io_context *io_context_;
-  /// The signal_set is used to register for process termination notifications.
-  boost::asio::signal_set *signals_;
 };
 
 }  // namespace asap

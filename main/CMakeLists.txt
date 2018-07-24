@@ -21,7 +21,7 @@ set(IDE_FOLDER "Main")
 # ==============================================================================
 
 # Target name
-set(target asap_app)
+set(target asap)
 
 # Exit here if required dependencies are not met
 message(STATUS "Lib ${target}")
@@ -74,9 +74,7 @@ set(compile_options)
 set(libraries
   asap::common
   spdlog
-  Boost::boost
-  Boost::program_options
-  Boost::system
+  cxxopts
   )
 
 
