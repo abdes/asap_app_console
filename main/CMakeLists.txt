@@ -119,15 +119,15 @@ tidy_target(${target})
 # API Documentation
 # ------------------------------------------------------------------------------
 
-configure_doxyfile(${target}
-  "\"Main\""
-  "\"The application main entry point.\""
-  "${source_path}")
-
-add_doxygen_target(${target})
-
-install(
-  DIRECTORY ${dox_root}/${target}
-  DESTINATION ${INSTALL_DOC}
-  COMPONENT docs
-)
+#configure_doxyfile(${target}
+#  "\"Main\""
+#  "\"The application main entry point.\""
+#  "${source_path}")
+#
+#add_doxygen_target(${target})
+#
+#install(
+#  DIRECTORY ${dox_root}/${target}
+#  DESTINATION ${INSTALL_DOC}
+#  COMPONENT docs
+#)
