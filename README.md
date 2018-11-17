@@ -1,3 +1,6 @@
+[![repo on GitHub](https://img.shields.io/badge/repo-GitHub-brightgreen.svg)](https://github.com/abdes/asap_app_console)
+[![repo on GitLab](https://img.shields.io/badge/repo-GitLab-brightgreen.svg)](https://gitlab.com/absassi/asap_app_console)
+
 [![Build status](https://ci.appveyor.com/api/projects/status/fbqox338lae708fq?svg=true)](https://ci.appveyor.com/project/abdes/asap_app_console)
 [![pipeline status](https://gitlab.com/absassi/asap_app_console/badges/master/pipeline.svg)](https://gitlab.com/absassi/asap_app_console/commits/master)
 
