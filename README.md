@@ -1,8 +1,23 @@
 [![repo on GitHub](https://img.shields.io/badge/repo-GitHub-brightgreen.svg)](https://github.com/abdes/asap_app_console)
 [![repo on GitLab](https://img.shields.io/badge/repo-GitLab-brightgreen.svg)](https://gitlab.com/absassi/asap_app_console)
 
-[![Build status](https://ci.appveyor.com/api/projects/status/fbqox338lae708fq?svg=true)](https://ci.appveyor.com/project/abdes/asap_app_console)
-[![pipeline status](https://gitlab.com/absassi/asap_app_console/badges/master/pipeline.svg)](https://gitlab.com/absassi/asap_app_console/commits/master)
+| Configuration | Build Status |
+| ------------- | ------------- |
+| Linux G++ 7 | [![Linux G++ 7][9]][0] |
+| Linux Clang 4 | [![Linux Clang 4][10]][0] |
+| Linux Clang 5 | [![Linux Clang 5][11]][0] |
+| XCode 8.3 - OS X 10.12 | [![XCode 8.3 - OS X 10.12][12]][0] |
+| XCode 9.4 - OS X 10.13 | [![XCode 9.4 - OS X 10.13][13]][0] |
+| Windows | [![Windows][21]][20] |
+
+[0]: https://travis-ci.org/abdes/asap_app_console
+[9]: https://travis-matrix-badges.herokuapp.com/repos/abdes/asap/branches/develop/9
+[10]: https://travis-matrix-badges.herokuapp.com/repos/abdes/asap/branches/develop/10
+[11]: https://travis-matrix-badges.herokuapp.com/repos/abdes/asap/branches/develop/11
+[12]: https://travis-matrix-badges.herokuapp.com/repos/abdes/asap/branches/develop/12
+[13]: https://travis-matrix-badges.herokuapp.com/repos/abdes/asap/branches/develop/13
+[20]: https://ci.appveyor.com/project/abdes/asap_app_console
+[21]: https://ci.appveyor.com/api/projects/status/fbqox338lae708fq/branch/master?svg=true
 
 # Starter project with minimum necessary functionality
   - use cmake for the build system
@@ -21,28 +36,18 @@
 Any optional submodule that is not needed can be simply removed from the git submodules
 and from the master CMakeLists.txt (`add_subdirectory()`).
 
-TODO: More Documentation
-
 ## Getting the code
 ```
-git clone --shallow-submodules --recurse-submodules -j4 https://gitlab.com/absassi/asap_app_console.git
+git clone --recurse-submodules -j4 https://gitlab.com/absassi/asap_app_console.git
 ```
 
 NOTES:
-  - --shallow-submodules makes git clone all submodules with a depth of 1. This will have
-    the effect of significantly accelerating the cloning of the project by not downloading
-    the entire history of third party libraries.
-  - -j4 requests git to parallelize cloning of repos
-  - both options need a relatively recent version of git. If that is not available, simply
-    do not use them.
+  - -j4 requests git to parallelize cloning of repos. Needs a relatively recent version 
+    of git. If that is not available, simply do not use this option. 
 
 ## Requirements
 Make sure you have a C++ compiler with C++-14 capabilities at least. Gnu, Clang and MSVC
 all can do that with a recent version.
-
-Make sure you have the development package for X11 on Linux systems. That would usually
-come with the xorg-dev package on Ubuntu and derivatives.
-
 
 ## Building
 ```
