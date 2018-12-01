@@ -17,7 +17,7 @@
 [12]: https://travis-matrix-badges.herokuapp.com/repos/abdes/asap/branches/develop/12
 [13]: https://travis-matrix-badges.herokuapp.com/repos/abdes/asap/branches/develop/13
 [20]: https://ci.appveyor.com/project/abdes/asap_app_console
-[21]: https://ci.appveyor.com/api/projects/status/fbqox338lae708fq/branch/master?svg=true
+[21]: https://ci.appveyor.com/api/projects/status/nng5iin0wbccjhkx/branch/develop?svg=true
 
 # Starter project with minimum necessary functionality
   - use cmake for the build system
