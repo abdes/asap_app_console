@@ -40,6 +40,7 @@ list(APPEND headers
   )
 
 set(sources
+  src/runner_base.cpp
   src/console_runner.cpp
   src/main.cpp
   ${public_headers}
