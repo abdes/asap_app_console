@@ -18,7 +18,7 @@ using asap::RunnerBase;
 
 
 int main(int argc, char **argv) {
-  auto &logger = asap::logging::Registry::GetLogger(asap::logging::Id::MAIN);
+  auto &logger = asap::logging::Registry::GetLogger("main");
 
   //asap::fs::CreateDirectories();
 
