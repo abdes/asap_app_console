@@ -11,13 +11,13 @@
 | Windows | [![Windows][21]][20] |
 
 [0]: https://travis-ci.org/abdes/asap_app_console
-[9]: https://travis-matrix-badges.herokuapp.com/repos/abdes/asap/branches/develop/9
-[10]: https://travis-matrix-badges.herokuapp.com/repos/abdes/asap/branches/develop/10
-[11]: https://travis-matrix-badges.herokuapp.com/repos/abdes/asap/branches/develop/11
-[12]: https://travis-matrix-badges.herokuapp.com/repos/abdes/asap/branches/develop/12
-[13]: https://travis-matrix-badges.herokuapp.com/repos/abdes/asap/branches/develop/13
+[9]: https://travis-matrix-badges.herokuapp.com/repos/abdes/asap/branches/master/9
+[10]: https://travis-matrix-badges.herokuapp.com/repos/abdes/asap/branches/master/10
+[11]: https://travis-matrix-badges.herokuapp.com/repos/abdes/asap/branches/master/11
+[12]: https://travis-matrix-badges.herokuapp.com/repos/abdes/asap/branches/master/12
+[13]: https://travis-matrix-badges.herokuapp.com/repos/abdes/asap/branches/master/13
 [20]: https://ci.appveyor.com/project/abdes/asap_app_console
-[21]: https://ci.appveyor.com/api/projects/status/nng5iin0wbccjhkx/branch/develop?svg=true
+[21]: https://ci.appveyor.com/api/projects/status/nng5iin0wbccjhkx/branch/master?svg=true
 
 # Starter project with minimum necessary functionality
   - use cmake for the build system
