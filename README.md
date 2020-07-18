@@ -1,70 +1,76 @@
 [![repo on GitHub](https://img.shields.io/badge/repo-GitHub-brightgreen.svg)](https://github.com/abdes/asap_app_console)
 [![repo on GitLab](https://img.shields.io/badge/repo-GitLab-brightgreen.svg)](https://gitlab.com/absassi/asap_app_console)
 
-| Configuration | Build Status |
-| ------------- | ------------- |
-| Linux G++ 7 | [![Linux G++ 7][9]][0] |
-| Linux Clang 4 | [![Linux Clang 4][10]][0] |
-| Linux Clang 5 | [![Linux Clang 5][11]][0] |
+| Configuration          | Build Status                       |
+| ---------------------- | ---------------------------------- |
+| Linux G++ 7            | [![Linux G++ 7][9]][0]             |
+| Linux Clang 4          | [![Linux Clang 4][10]][0]          |
+| Linux Clang 5          | [![Linux Clang 5][11]][0]          |
 | XCode 8.3 - OS X 10.12 | [![XCode 8.3 - OS X 10.12][12]][0] |
 | XCode 9.4 - OS X 10.13 | [![XCode 9.4 - OS X 10.13][13]][0] |
-| Windows | [![Windows][21]][20] |
+| Windows                | [![Windows][21]][20]               |
 
 [0]: https://travis-ci.org/abdes/asap_app_console
-[9]: https://travis-matrix-badges.herokuapp.com/repos/abdes/asap/branches/develop/9
-[10]: https://travis-matrix-badges.herokuapp.com/repos/abdes/asap/branches/develop/10
-[11]: https://travis-matrix-badges.herokuapp.com/repos/abdes/asap/branches/develop/11
-[12]: https://travis-matrix-badges.herokuapp.com/repos/abdes/asap/branches/develop/12
-[13]: https://travis-matrix-badges.herokuapp.com/repos/abdes/asap/branches/develop/13
+[9]: https://travis-matrix-badges.herokuapp.com/repos/abdes/asap/branches/master/9
+[10]: https://travis-matrix-badges.herokuapp.com/repos/abdes/asap/branches/master/10
+[11]: https://travis-matrix-badges.herokuapp.com/repos/abdes/asap/branches/master/11
+[12]: https://travis-matrix-badges.herokuapp.com/repos/abdes/asap/branches/master/12
+[13]: https://travis-matrix-badges.herokuapp.com/repos/abdes/asap/branches/master/13
 [20]: https://ci.appveyor.com/project/abdes/asap_app_console
-[21]: https://ci.appveyor.com/api/projects/status/nng5iin0wbccjhkx/branch/develop?svg=true
+[21]: https://ci.appveyor.com/api/projects/status/nng5iin0wbccjhkx/branch/master?svg=true
 
 # Starter project with minimum necessary functionality
-  - use cmake for the build system
-  - modular structure with each module self-contained in a subdirectory within
-    the project
-  - build helpers in common/cmake to facilitate declaration of library, exe,
-    test modules, for the end-to-end lifecycle including doc generation, test,
-    packaging etc...
-  - common facilities (common module) for platform specifics, assertions
-    support, logging
-  - unit testing with Catch2
-  - Optional Modules:
-    - backported C++17 filesystem implementation (will be portable across Linux, Mac
-      and Windows)
+
+- use cmake for the build system
+- modular structure with each module self-contained in a subdirectory within
+  the project
+- build helpers in common/cmake to facilitate declaration of library, exe,
+  test modules, for the end-to-end lifecycle including doc generation, test,
+  packaging etc...
+- common facilities (common module) for platform specifics, assertions
+  support, logging
+- unit testing with Catch2
+- Optional Modules:
+  - backported C++17 filesystem implementation (will be portable across Linux, Mac
+    and Windows)
 
 Any optional submodule that is not needed can be simply removed from the git submodules
 and from the master CMakeLists.txt (`add_subdirectory()`).
 
 ## Getting the code
-```
+
+```shell
 git clone --recurse-submodules -j4 https://gitlab.com/absassi/asap_app_console.git
 ```
 
 NOTES:
-  - -j4 requests git to parallelize cloning of repos. Needs a relatively recent version 
-    of git. If that is not available, simply do not use this option. 
+
+- -j4 requests git to parallelize cloning of repos. Needs a relatively recent version
+  of git. If that is not available, simply do not use this option.
 
 ## Requirements
+
 Make sure you have a C++ compiler with C++-14 capabilities at least. Gnu, Clang and MSVC
 all can do that with a recent version.
 
 ## Building
-```
+
+```shell
 mkdir _build && cd _build && cmake .. && cmake --build .
 ```
+
 You can also use any of the cmake options, generators, etc...
 
 By default the build will create shared libraries. If you want static libraries, pass
 -DBUILD_SHARED_LIBS=OFF to cmake during configuration:
-```
+
+```shell
 cmake -DBUILD_SHARED_LIBS=OFF ..
 ```
 
 You can also use any of the cmake options, generators, etc...
 
-
-```
+```cmake
 # Project options
 option(BUILD_SHARED_LIBS     "Build shared instead of static libraries."              ON)
 option(OPTION_SELF_CONTAINED "Create a self-contained install with all dependencies." OFF)
@@ -79,4 +85,3 @@ option(OPTION_GOOGLE_TSAN    "Instrument code with thread sanitizer"            
 ```
 
 The code is portable across Linux (g++ and clang), OS X and Visual Studio 2017.
-
