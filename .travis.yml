@@ -1,5 +1,5 @@
 language:          cpp
-dist:              trusty
+dist:              xenial
 git:
   submodules:      true
 env:
@@ -253,26 +253,26 @@ matrix:
       - make
       - ctest --output-on-failure
 
-  #
-  # XCode 8.3
-  #
-  - os: osx
-    env:
-      - TEST="XCode 8.3 - OS X 10.12"
-    osx_image: xcode8.3
-    script:
-      - cmake -Wno-dev ..
-      - make
-      - ctest --output-on-failure
+    #
+    # XCode 9.4.1
+    #
+    - os: osx
+      env:
+        - TEST="XCode 9.4.1 - OS X 10.13"
+      osx_image: xcode9.4
+      script:
+        - cmake -Wno-dev ..
+        - make
+        - ctest --output-on-failure
 
-  #
-  # XCode 9.4
-  #
-  - os: osx
-    env:
-      - TEST="XCode 9.4 - OS X 10.13"
-    osx_image: xcode9.4
-    script:
-      - cmake -Wno-dev ..
-      - make
-      - ctest --output-on-failure
+    #
+    # XCode 12.0
+    #
+    - os: osx
+      env:
+        - TEST="XCode 12.0 - OS X 10.15.5"
+      osx_image: xcode12
+      script:
+        - cmake -Wno-dev ..
+        - make
+        - ctest --output-on-failure
