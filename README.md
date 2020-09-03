@@ -1,23 +1,23 @@
 [![repo on GitHub](https://img.shields.io/badge/repo-GitHub-brightgreen.svg)](https://github.com/abdes/asap_app_console)
 [![repo on GitLab](https://img.shields.io/badge/repo-GitLab-brightgreen.svg)](https://gitlab.com/absassi/asap_app_console)
 
-| Configuration          | Build Status                       |
-| ---------------------- | ---------------------------------- |
-| Linux G++ 7            | [![Linux G++ 7][9]][0]             |
-| Linux Clang 4          | [![Linux Clang 4][10]][0]          |
-| Linux Clang 5          | [![Linux Clang 5][11]][0]          |
-| XCode 8.3 - OS X 10.12 | [![XCode 8.3 - OS X 10.12][12]][0] |
-| XCode 9.4 - OS X 10.13 | [![XCode 9.4 - OS X 10.13][13]][0] |
-| Windows                | [![Windows][21]][20]               |
+| Configuration             | Build Status                          |
+| ------------------------- | ------------------------------------- |
+| Linux G++ 7               | [![Linux G++ 7][9]][0]                |
+| Linux Clang 4             | [![Linux Clang 4][10]][0]             |
+| Linux Clang 5             | [![Linux Clang 5][11]][0]             |
+| XCode 9.4.1 - OS X 10.13  | [![XCode 9.4.1 - OS X 10.13][12]][0]  |
+| XCode 12.0 - OS X 10.15.5 | [![XCode 12.0 - OS X 10.15.5][13]][0] |
+| Windows                   | [![Windows][21]][20]                  |
 
 [0]: https://travis-ci.org/abdes/asap_app_console
-[9]: https://travis-matrix-badges.herokuapp.com/repos/abdes/asap/branches/master/9
-[10]: https://travis-matrix-badges.herokuapp.com/repos/abdes/asap/branches/master/10
-[11]: https://travis-matrix-badges.herokuapp.com/repos/abdes/asap/branches/master/11
-[12]: https://travis-matrix-badges.herokuapp.com/repos/abdes/asap/branches/master/12
-[13]: https://travis-matrix-badges.herokuapp.com/repos/abdes/asap/branches/master/13
+[9]: https://travis-matrix-badges.herokuapp.com/repos/abdes/asap/branches/develop/9
+[10]: https://travis-matrix-badges.herokuapp.com/repos/abdes/asap/branches/develop/10
+[11]: https://travis-matrix-badges.herokuapp.com/repos/abdes/asap/branches/develop/11
+[12]: https://travis-matrix-badges.herokuapp.com/repos/abdes/asap/branches/develop/12
+[13]: https://travis-matrix-badges.herokuapp.com/repos/abdes/asap/branches/develop/13
 [20]: https://ci.appveyor.com/project/abdes/asap_app_console
-[21]: https://ci.appveyor.com/api/projects/status/nng5iin0wbccjhkx/branch/master?svg=true
+[21]: https://ci.appveyor.com/api/projects/status/nng5iin0wbccjhkx/branch/develop?svg=true
 
 # Starter project with minimum necessary functionality
 
